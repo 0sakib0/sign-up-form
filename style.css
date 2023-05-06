@@ -1,14 +1,41 @@
+.container {
+    display: flex;
+    width: 100vw;
+   
+}
+body {
+    background-color: #bbd1b2;
+    
+}
 
-
-.image {
+div.image {
     background-image: url(images/pexels-tobias-bjørkli-2360684.jpg);
     min-width: 400px;
     height: 100vh;
-    width: 40vw;
+    width: 35vw;
     position: absolute;
     background-size: 700px;
 }
 
-.logo {
-    width: 500px;
+div.logo {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    background-color:#00000056;
+    width: 100%;
+    height: 10rem;
+
 }
+
+.logo h1 {
+    color:white;
+    font-size: 3rem;
+}
+
+
+.logo img {
+    width: 6rem;
+}
+
