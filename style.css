@@ -1,10 +1,19 @@
+:root {
+    --main-color-theme: #fcfdfc;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
 .container {
     display: flex;
     width: 100vw;
    
 }
 body {
-    background-color: #bbd1b2;
+    background-color: var(--main-color-theme);
     
 }
 
@@ -15,11 +24,12 @@ div.image {
     width: 35vw;
     position: absolute;
     background-size: 700px;
+    
 }
 
 div.logo {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     margin-top: 20vh;
@@ -31,7 +41,8 @@ div.logo {
 
 .logo h1 {
     color:white;
-    font-size: 3rem;
+    font-size: 5rem;
+    font-family: Norse-Bold;
 }
 
 
@@ -39,3 +50,22 @@ div.logo {
     width: 6rem;
 }
 
+.image p {
+    position: absolute;
+    bottom: 20px;
+    color: rgba(255, 255, 255, 0.712);
+    font-family:sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(31, 160, 128);
+}
+
+a:visited {
+    color: rgba(16, 192, 25, 0.658);
+}
+
+a:hover {
+    color: rgba(0, 128, 0, 0.568);
+}
