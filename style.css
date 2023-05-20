@@ -2,6 +2,12 @@
     --main-color-theme: #fcfdfc;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 @font-face {
     font-family: Norse-Bold;
     src: url(fonts/Norse-Bold.otf);
