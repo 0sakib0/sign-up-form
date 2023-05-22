@@ -15,7 +15,6 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
   width: 100vw;
 }
 
@@ -26,7 +25,8 @@ body {
 div.image-container {
   position: relative;
   background-image: url(images/pexels-tobias-bjørkli-2360684.jpg);
-  height: 100vmin;
+  height: 100vh;
+  min-width: 350px;
   background-size: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,28 +80,28 @@ div.logo {
 .form-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: start;
   background-color: rgba(240, 238, 238, 0.521);
-  width: 60vw;
   flex-grow: 2;
-  
+  width: 60vw;
 }
 
 .header-text {
-  position: relative;
+  height: 9vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-content: flex-end;
+  padding-top: 100px;
   font-size: 1.4rem;
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  /* padding: 0px 200px 0px 50px; */
   
-
+  
 }
 
-.header-text p {
-  
-
+.header-text p{
+ margin-bottom: -1px;
 }
 
 
@@ -109,10 +109,9 @@ div.logo {
 .input-section {
   background-color: white;
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
   box-shadow: 0px 6px 4px -3px rgba(0, 0, 0, 0.1);
-  padding: 3.5vw;
+  padding: 1.2rem 2vw 3rem 2vw;
   
 }
 
@@ -125,7 +124,7 @@ div.logo {
   display: flex;
   flex-wrap: wrap;
   gap: 2vw;
-  width: 85%;
+  
 }
 
 
@@ -133,8 +132,7 @@ div.logo {
 .submit-btn {
   display:flex;
   flex-direction: column;
-  margin-top: -2vh;
-  flex-grow: 1;
+  gap: 1rem;
 }
 
 label,
@@ -159,5 +157,5 @@ input {
 }
 
 .header-text, .submit-btn {
-  padding: 3.5vw;
+  padding: 1.2rem 2vw 3rem 2vw;
 }
