@@ -82,13 +82,11 @@ div.logo {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  background-color: rgba(240, 238, 238, 0.521);
-  flex-grow: 2;
+  background-color: rgba(240, 238, 238, 0.521); 
   width: 60vw;
 }
 
 .header-text {
-  height: 9vh;
   display: flex;
   flex-direction: column;
   align-content: flex-end;
@@ -111,19 +109,21 @@ div.logo {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 6px 4px -3px rgba(0, 0, 0, 0.1);
-  padding: 1.2rem 2vw 3rem 2vw;
+  padding: 1.5rem 2vw 3rem 2vw;
   
 }
 
 .input-section > p {
+  display: flex;
   font-size:x-large;
-  font-weight: bolder;
+  font-weight: bold;
+  margin-top: 8px;
 }
 
 .input-section > form {
   display: flex;
   flex-wrap: wrap;
-  gap: 2vw;
+  gap: 3vw;
   
 }
 
@@ -157,5 +157,10 @@ input {
 }
 
 .header-text, .submit-btn {
-  padding: 1.2rem 2vw 3rem 2vw;
+  padding: 2rem 2vw 3rem 2vw;
+}
+
+.submit-btn > button:hover {
+  color: #b6b8b6;
+  background-color: #26441d;
 }
