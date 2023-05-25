@@ -124,6 +124,8 @@ div.logo {
   display: flex;
   flex-wrap: wrap;
   gap: 3vw;
+  font-size: 14px;
+  
   
 }
 
@@ -154,6 +156,11 @@ input {
 
 .submit-btn a {
   text-decoration: none;
+  color: #266609;
+}
+
+.submit-btn a:visited {
+
 }
 
 .header-text, .submit-btn {
@@ -163,4 +170,28 @@ input {
 .submit-btn > button:hover {
   color: #b6b8b6;
   background-color: #26441d;
+}
+
+input[type=text]:valid {
+  color: green;
+}
+
+input[type=text]:invalid {
+  color: red;
+}
+
+input {
+  border: 2px solid #26660931;
+  border-radius: 2px;
+  
+}
+
+input[type=text]:focus{
+  border: 2px solid #266609;
+}
+
+input:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #00a0d2; Set a custom border color
+  box-shadow: 0 0 5px #a1a8aa; /* Add a box shadow */
 }
